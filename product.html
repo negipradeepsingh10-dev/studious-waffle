@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Pahadi Organics</title>
+
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="style.cs">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <h2>Pahadi Organics</h2>
+            <p>Loading Organic Goodness...</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                ⛰ Pahadi Organics
+            </a>
+
+           <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#why-us">Our Story</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#newsletter" class="nav-cta">Shop Now</a></li>
+      </ul>
+
+            <div class="nav-actions">
+
+                <button id="themeToggle">
+                    🌙
+                </button>
+
+                <button class="cart-btn">
+                    🛒
+                    <span id="cartCount">0</span>
+                </button>
+
+                <button class="hamburger" id="hamburger">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="products-hero">
+
+        <div class="container hero-content reveal-up">
+
+            <span class="tag">
+                OUR PRODUCTS
+            </span>
+
+            <h1>
+                Pure From The
+                <em>Himalayas</em>
+            </h1>
+
+            <p>
+                Discover authentic Uttarakhand organic products sourced directly from mountain farmers.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Search & Filter -->
+    <section class="filter-section">
+
+        <div class="container filter-wrapper">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="grains">
+                    Grains
+                </option>
+
+                <option value="dal">
+                    Pulses
+                </option>
+
+                <option value="juice">
+                    Juices
+                </option>
+
+                <option value="spices">
+                    Spices
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+    <!-- Products -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="products-grid" id="productsGrid">
+
+                <!-- Product 1 -->
+                <div class="product-card reveal-up"
+                     data-category="grains">
+
+                    <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600"
+                        alt="Mandua">
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            Grains
+                        </span>
+
+                        <h3>
+                            Mandua Flour
+                        </h3>
+
+                        <p>
+                            Traditional Himalayan finger millet flour.
+                        </p>
+
+                        <div class="price-row">
+
+                            <span class="price">
+                                ₹199
+                            </span>
+
+                            <div class="actions">
+
+                                <button class="wishlist-btn">
+                                    ❤️
+                                </button>
+
+                                <button class="add-cart">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card reveal-up"
+                     data-category="grains">
+
+                    <img src="https://images.unsplash.com/photo-1515543904379-3d757afe72e3?w=600"
+                        alt="Jhangora">
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            Grains
+                        </span>
+
+                        <h3>
+                            Jhangora
+                        </h3>
+
+                        <p>
+                            Nutritious Himalayan barnyard millet.
+                        </p>
+
+                        <div class="price-row">
+
+                            <span class="price">
+                                ₹249
+                            </span>
+
+                            <div class="actions">
+
+                                <button class="wishlist-btn">
+                                    ❤️
+                                </button>
+
+                                <button class="add-cart">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card reveal-up"
+                     data-category="dal">
+
+                    <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600"
+                        alt="Gahat Dal">
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            Pulses
+                        </span>
+
+                        <h3>
+                            Gahat Dal
+                        </h3>
+
+                        <p>
+                            Authentic horse gram from Uttarakhand.
+                        </p>
+
+                        <div class="price-row">
+
+                            <span class="price">
+                                ₹299
+                            </span>
+
+                            <div class="actions">
+
+                                <button class="wishlist-btn">
+                                    ❤️
+                                </button>
+
+                                <button class="add-cart">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card reveal-up"
+                     data-category="dal">
+
+                    <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=600"
+                        alt="Bhatt">
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            Pulses
+                        </span>
+
+                        <h3>
+                            Bhatt Dal
+                        </h3>
+
+                        <p>
+                            Protein-rich black soybean.
+                        </p>
+
+                        <div class="price-row">
+
+                            <span class="price">
+                                ₹279
+                            </span>
+
+                            <div class="actions">
+
+                                <button class="wishlist-btn">
+                                    ❤️
+                                </button>
+
+                                <button class="add-cart">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card reveal-up"
+                     data-category="juice">
+
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600"
+                        alt="Buransh">
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            Juices
+                        </span>
+
+                        <h3>
+                            Buransh Juice
+                        </h3>
+
+                        <p>
+                            Refreshing Himalayan rhododendron drink.
+                        </p>
+
+                        <div class="price-row">
+
+                            <span class="price">
+                                ₹349
+                            </span>
+
+                            <div class="actions">
+
+                                <button class="wishlist-btn">
+                                    ❤️
+                                </button>
+
+                                <button class="add-cart">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card reveal-up"
+                     data-category="spices">
+
+                    <img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600"
+                        alt="Spices">
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            Spices
+                        </span>
+
+                        <h3>
+                            Himalayan Spices
+                        </h3>
+
+                        <p>
+                            Pure and aromatic traditional spices.
+                        </p>
+
+                        <div class="price-row">
+
+                            <span class="price">
+                                ₹179
+                            </span>
+
+                            <div class="actions">
+
+                                <button class="wishlist-btn">
+                                    ❤️
+                                </button>
+
+                                <button class="add-cart">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <p>
+                © 2025 Pahadi Organics. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Back To Top -->
+    <button id="backToTop">
+        ↑
+    </button>
+
+    <script src="product.js"></script>
+
+</body>
+</html>

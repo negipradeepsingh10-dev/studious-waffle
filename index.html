@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pahadi Organics – Pure from the Himalayas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-peak">
+        <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polyline points="0,120 50,30 80,70 100,10 130,60 160,25 200,120" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="loader-mountain"/>
+        </svg>
+      </div>
+      <p class="loader-text">Sourcing from the peaks…</p>
+    </div>
+  </div>
+
+  <!-- ========== STICKY NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-symbol">⛰</span>
+        <span class="logo-text">Pahadi<em>Organics</em></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#why-us">Our Story</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#newsletter" class="nav-cta">Shop Now</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+          <span class="theme-icon sun">☀</span>
+          <span class="theme-icon moon">☽</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero">
+    <canvas id="mountainCanvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow reveal-up">Certified Organic · Uttarakhand, India</span>
+      <h1 class="hero-title reveal-up">
+        <span class="line">Purity rooted</span>
+        <span class="line italic">in the Himalayas</span>
+      </h1>
+      <p class="hero-sub reveal-up">Ancient grains, wild herbs, and artisan foods — cultivated above 1500m by families who have farmed these slopes for generations.</p>
+      <div class="hero-btns reveal-up">
+        <a href="#products" class="btn btn-primary">Explore Products</a>
+        <a href="#why-us" class="btn btn-ghost">Our Promise</a>
+      </div>
+      <div class="hero-scroll-hint">
+        <span class="scroll-line"></span>
+        <span>Scroll</span>
+      </div>
+    </div>
+    <!-- floating altitude badge -->
+    <div class="altitude-badge">
+      <span class="alt-num">1500<sup>m+</sup></span>
+      <span class="alt-label">Altitude Grown</span>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED PRODUCTS ========== -->
+  <section id="products" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">From Our Farms</span>
+        <h2>Featured <em>Organic Products</em></h2>
+        <p>Each product carries the terroir of the Kumaon and Garhwal highlands.</p>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card reveal-up">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&q=80" alt="Mandua Finger Millet" loading="lazy" />
+            <span class="product-badge">Bestseller</span>
+          </div>
+          <div class="product-info">
+            <span class="product-origin">Almora District</span>
+            <h3>Mandua <span>(Finger Millet)</span></h3>
+            <p>Rich in calcium and iron. Stone-ground from heirloom red millet varieties.</p>
+            <div class="product-footer">
+              <span class="price">₹ 280 <small>/ kg</small></span>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal-up">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1543352634-99a5d50ae78e?w=400&q=80" alt="Jhangora Barnyard Millet" loading="lazy" />
+            <span class="product-badge new">New Season</span>
+          </div>
+          <div class="product-info">
+            <span class="product-origin">Chamoli District</span>
+            <h3>Jhangora <span>(Barnyard Millet)</span></h3>
+            <p>Gluten-free ancient millet. Higher protein than rice or wheat.</p>
+            <div class="product-footer">
+              <span class="price">₹ 320 <small>/ kg</small></span>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal-up">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?w=400&q=80" alt="Gahat Dal Kulath" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <span class="product-origin">Pithoragarh District</span>
+            <h3>Gahat Dal <span>(Kulath)</span></h3>
+            <p>Horse gram lentil — a winter superfood used in traditional Pahadi soups.</p>
+            <div class="product-footer">
+              <span class="price">₹ 240 <small>/ kg</small></span>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal-up">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?w=400&q=80" alt="Bhatt Dal Black Soybean" loading="lazy" />
+            <span class="product-badge">Rare Find</span>
+          </div>
+          <div class="product-info">
+            <span class="product-origin">Pauri Garhwal</span>
+            <h3>Bhatt Dal <span>(Black Soybean)</span></h3>
+            <p>Indigenous black soybean. Nutty depth and high vegetable protein.</p>
+            <div class="product-footer">
+              <span class="price">₹ 300 <small>/ kg</small></span>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal-up">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1561043433-aaf687c4cf04?w=400&q=80" alt="Organic Rajma" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <span class="product-origin">Uttarkashi</span>
+            <h3>Organic Rajma <span>(Red Kidney Beans)</span></h3>
+            <p>Small, creamy rajma with intense earthy flavour. No chemicals. Ever.</p>
+            <div class="product-footer">
+              <span class="price">₹ 260 <small>/ kg</small></span>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal-up">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&q=80" alt="Buransh Rhododendron Juice" loading="lazy" />
+            <span class="product-badge">Seasonal</span>
+          </div>
+          <div class="product-info">
+            <span class="product-origin">Munsiyari</span>
+            <h3>Buransh Juice <span>(Rhododendron)</span></h3>
+            <p>Hand-pressed from wild Himalayan rhododendron. Antioxidant-rich nectar.</p>
+            <div class="product-footer">
+              <span class="price">₹ 380 <small>/ 500ml</small></span>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="section-cta reveal-up">
+        <a href="#" class="btn btn-outline">View All 80+ Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CATEGORIES ========== -->
+  <section id="categories" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Browse by Type</span>
+        <h2>Product <em>Categories</em></h2>
+      </div>
+      <div class="categories-grid">
+        <div class="cat-card reveal-up" style="--cat-color:#6B8C6B;">
+          <div class="cat-icon">🌾</div>
+          <h3>Ancient Grains</h3>
+          <span>14 Products</span>
+        </div>
+        <div class="cat-card reveal-up" style="--cat-color:#7B6B5E;">
+          <div class="cat-icon">🫘</div>
+          <h3>Dals & Legumes</h3>
+          <span>18 Products</span>
+        </div>
+        <div class="cat-card reveal-up" style="--cat-color:#8C5E5E;">
+          <div class="cat-icon">🍓</div>
+          <h3>Wild Juices</h3>
+          <span>9 Products</span>
+        </div>
+        <div class="cat-card reveal-up" style="--cat-color:#5E6B7B;">
+          <div class="cat-icon">🥒</div>
+          <h3>Local Pickles</h3>
+          <span>22 Products</span>
+        </div>
+        <div class="cat-card reveal-up" style="--cat-color:#6B7B5E;">
+          <div class="cat-icon">🌿</div>
+          <h3>Herbal Products</h3>
+          <span>31 Products</span>
+        </div>
+        <div class="cat-card reveal-up" style="--cat-color:#7B6B8C;">
+          <div class="cat-icon">🥬</div>
+          <h3>Organic Vegetables</h3>
+          <span>26 Products</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section id="why-us" class="section">
+    <div class="container">
+      <div class="why-us-inner">
+        <div class="why-us-left reveal-left">
+          <span class="section-tag">Our Promise</span>
+          <h2>Why families trust <em>Pahadi Organics</em></h2>
+          <p>We are a farmer collective, not a middleman. Every rupee you spend goes directly to the mountain communities who grow these foods.</p>
+          <a href="#" class="btn btn-primary">Meet the Farmers</a>
+        </div>
+        <div class="why-us-right">
+          <div class="why-card reveal-up">
+            <span class="why-icon">🏔</span>
+            <div>
+              <h4>Altitude Certified</h4>
+              <p>All produce grown above 1500m in pristine Himalayan soil, verified by third-party auditors.</p>
+            </div>
+          </div>
+          <div class="why-card reveal-up">
+            <span class="why-icon">🌱</span>
+            <div>
+              <h4>Zero Chemicals</h4>
+              <p>No synthetic pesticides, fertilisers, or GMOs. Ever. Our farms are Jaivik Bharat certified.</p>
+            </div>
+          </div>
+          <div class="why-card reveal-up">
+            <span class="why-icon">🤝</span>
+            <div>
+              <h4>Direct Trade</h4>
+              <p>Farmers receive 70% of the final price — 3× the national average for organic produce.</p>
+            </div>
+          </div>
+          <div class="why-card reveal-up">
+            <span class="why-icon">📦</span>
+            <div>
+              <h4>Freshness Guarantee</h4>
+              <p>Packed within 48 hours of harvest. Delivered in compostable, plastic-free packaging.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== UTTARAKHAND SPECIALS ========== -->
+  <section id="specials" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Heritage Collection</span>
+        <h2>Uttarakhand <em>Specials</em></h2>
+        <p>Rare, traditional products you won't find anywhere else.</p>
+      </div>
+      <div class="specials-row">
+        <div class="special-item reveal-up">
+          <div class="special-img">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=500&q=80" alt="Herbal Kadha" loading="lazy" />
+          </div>
+          <div class="special-text">
+            <span class="special-num">01</span>
+            <h3>Wild Himalayan Herbal Kadha</h3>
+            <p>A 12-herb immune tonic blend harvested from Kedarnath valley — brewed by Pahadi healers for centuries.</p>
+            <a href="#" class="link-arrow">Discover →</a>
+          </div>
+        </div>
+        <div class="special-item reveal-up special-reverse">
+          <div class="special-img">
+            <img src="https://images.unsplash.com/photo-1605296867424-35fc25c9212a?w=500&q=80" alt="Traditional Pickles" loading="lazy" />
+          </div>
+          <div class="special-text">
+            <span class="special-num">02</span>
+            <h3>Pahadi Achar — Heirloom Pickles</h3>
+            <p>Sun-fermented with mustard oil and Himalayan pink salt. Recipes unchanged for four generations.</p>
+            <a href="#" class="link-arrow">Discover →</a>
+          </div>
+        </div>
+        <div class="special-item reveal-up">
+          <div class="special-img">
+            <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=500&q=80" alt="Organic Vegetables" loading="lazy" />
+          </div>
+          <div class="special-text">
+            <span class="special-num">03</span>
+            <h3>Seasonal Mountain Vegetables</h3>
+            <p>Fresh-harvested beetroot, wild mushrooms, and fiddlehead ferns from Munsiyari highland farms.</p>
+            <a href="#" class="link-arrow">Discover →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Customer Stories</span>
+        <h2>What our <em>customers say</em></h2>
+      </div>
+      <div class="testimonials-slider reveal-up">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"The Mandua flour from Pahadi Organics is transformative. You can taste the altitude. My grandmother immediately recognised it as the real thing."</blockquote>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/60?img=1" alt="Priya Mehta" />
+              <div>
+                <strong>Priya Mehta</strong>
+                <span>Delhi, Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Ordered the heritage rajma and Buransh juice together. The rajma cooked in under 40 mins and the juice was unlike anything I've tasted. Ordering monthly now."</blockquote>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/60?img=5" alt="Rohan Sharma" />
+              <div>
+                <strong>Rohan Sharma</strong>
+                <span>Bangalore, Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"As a nutritionist, I recommend Pahadi Organics to all my clients. The Bhatt dal protein profile rivals premium imported options at one-fourth the price."</blockquote>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/60?img=9" alt="Dr. Anita Rawat" />
+              <div>
+                <strong>Dr. Anita Rawat</strong>
+                <span>Mumbai, Nutritionist</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"The packaging is beautiful and fully compostable. The Herbal Kadha has become my daily ritual. I feel the difference in my energy and immunity every single morning."</blockquote>
+            <div class="testi-author">
+              <img src="https://i.pravatar.cc/60?img=14" alt="Kavita Joshi" />
+              <div>
+                <strong>Kavita Joshi</strong>
+                <span>Pune, Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn" id="prevBtn" aria-label="Previous">←</button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn" id="nextBtn" aria-label="Next">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS / COUNTER ========== -->
+  <section id="stats" class="section section-stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal-up">
+          <span class="stat-num" data-target="340">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Farmer Families</span>
+        </div>
+        <div class="stat-item reveal-up">
+          <span class="stat-num" data-target="80">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Organic Products</span>
+        </div>
+        <div class="stat-item reveal-up">
+          <span class="stat-num" data-target="28000">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat-item reveal-up">
+          <span class="stat-num" data-target="12">0</span><span class="stat-suffix"></span>
+          <span class="stat-label">Districts Covered</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWSLETTER ========== -->
+  <section id="newsletter" class="section">
+    <div class="container">
+      <div class="newsletter-box reveal-up">
+        <div class="nl-left">
+          <span class="section-tag">Stay Connected</span>
+          <h2>Get seasonal harvests <em>delivered to your inbox</em></h2>
+          <p>Join 12,000 conscious consumers. Monthly harvest updates, recipes, and exclusive early access to limited seasonal produce.</p>
+        </div>
+        <div class="nl-right">
+          <form class="nl-form" id="nlForm">
+            <input type="text" placeholder="Your Name" id="nlName" autocomplete="off" />
+            <input type="email" placeholder="Your Email Address" id="nlEmail" autocomplete="off" />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="nl-note">No spam. Unsubscribe anytime. 🌿</p>
+          <div class="nl-success" id="nlSuccess">🎉 You're in! Watch your inbox for mountain magic.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <span class="logo-symbol">⛰</span>
+            <span class="logo-text">Pahadi<em>Organics</em></span>
+          </a>
+          <p>Bridging mountain farms and city kitchens since 2017. Certified organic. Rooted in Uttarakhand.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" class="social-btn">IG</a>
+            <a href="#" aria-label="Facebook" class="social-btn">FB</a>
+            <a href="#" aria-label="YouTube" class="social-btn">YT</a>
+            <a href="#" aria-label="Twitter/X" class="social-btn">𝕏</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Farmers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Wholesale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns Policy</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <address>
+            <p>📍 Akhori, Bhanaj<br>Uttarakhand – 246425</p>
+            <p>📞 <a href="tel:+919897325641">+91 98973 25641</a></p>
+            <p>✉ <a href="mailto:hello@pahadiorganics.in">hello@pahadiorganics.in</a></p>
+            <p>🕐 Mon–Sat, 9 AM – 6 PM IST</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Pahadi Organics. All rights reserved.</p>
+        <p>Made with ♥ for mountain communities.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="index.js"></script>
+</body>
+</html>
